@@ -15,6 +15,7 @@
 		0DA9B41A291DCBB600E49E74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DA9B419291DCBB600E49E74 /* Assets.xcassets */; };
 		0DA9B41D291DCBB600E49E74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DA9B41B291DCBB600E49E74 /* LaunchScreen.storyboard */; };
 		0DA9B425292C025000E49E74 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA9B424292C025000E49E74 /* AddViewController.swift */; };
+		D3B1BDBE29370D020057E4B8 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B1BDBD29370D020057E4B8 /* RegistrationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		0DA9B41C291DCBB600E49E74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0DA9B41E291DCBB600E49E74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DA9B424292C025000E49E74 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		D3B1BDBD29370D020057E4B8 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				0DA9B412291DCBB500E49E74 /* SceneDelegate.swift */,
 				0DA9B414291DCBB500E49E74 /* ViewController.swift */,
 				0DA9B416291DCBB500E49E74 /* Main.storyboard */,
+				D3B1BDBD29370D020057E4B8 /* RegistrationViewController.swift */,
 				0DA9B419291DCBB600E49E74 /* Assets.xcassets */,
 				0DA9B41B291DCBB600E49E74 /* LaunchScreen.storyboard */,
 				0DA9B41E291DCBB600E49E74 /* Info.plist */,
@@ -153,6 +156,7 @@
 				0DA9B411291DCBB500E49E74 /* AppDelegate.swift in Sources */,
 				0DA9B425292C025000E49E74 /* AddViewController.swift in Sources */,
 				0DA9B413291DCBB500E49E74 /* SceneDelegate.swift in Sources */,
+				D3B1BDBE29370D020057E4B8 /* RegistrationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
