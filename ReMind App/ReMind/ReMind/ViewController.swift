@@ -5,6 +5,7 @@
 //  Created by Victor Callejas on 11/10/22.
 //
 
+import UserNotifications
 import UIKit
 
 class ViewController: UIViewController {
@@ -26,7 +27,14 @@ class ViewController: UIViewController {
     }
     @IBAction func didTapTest() {
         
-        // show test vc
+        // show test vc and test the new added notification
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound], completionHandler: { success, error in if success{
+            
+        }
+            else if let error = error{
+                print("there was an error")
+            }
+        })
         
     }
 

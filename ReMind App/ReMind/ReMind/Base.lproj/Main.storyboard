@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Reminds-->
+        <!--ReMinds-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ReMind" customModuleProvider="target" sceneMemberID="viewController">
@@ -30,9 +30,17 @@
                             <constraint firstItem="Dzz-ze-sCb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pVA-xC-iO5"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Reminds" id="5pc-G5-4wi">
-                        <barButtonItem key="leftBarButtonItem" title="Test" id="y9y-x1-fnb"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="sTX-VS-IEJ"/>
+                    <navigationItem key="navigationItem" title="ReMinds" id="5pc-G5-4wi">
+                        <barButtonItem key="leftBarButtonItem" title="Test" id="y9y-x1-fnb">
+                            <connections>
+                                <action selector="didTapTest" destination="BYZ-38-t0r" id="01E-Dt-mgO"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="sTX-VS-IEJ">
+                            <connections>
+                                <action selector="didTapAdd" destination="BYZ-38-t0r" id="fYe-wj-xYk"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="Dzz-ze-sCb" id="Efa-ch-B4d"/>
