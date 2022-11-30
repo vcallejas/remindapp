@@ -9,17 +9,24 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet var table: UITableView!
+    @IBOutlet var tableView: UITableView!
     
     var models = [ReMind]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        table.delegate = self
-        table.dataSource = self
+        tableView.delegate = self
+        tableView.dataSource = self
     }
     
     @IBAction func didTapAdd() {
+        
+        // show add vc
+        
+    }
+    @IBAction func didTapTest() {
+        
+        // show test vc
         
     }
 
@@ -27,10 +34,12 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDelegate {
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) { tableView.deselectRow(at: <#T##IndexPath#>, animated: true)
+    func tableView (_ tableView: UITableView, didSelectRowAt indexpath: IndexPath) {
+        tableView.deselectRow(at: indexpath, animated: true)
     }
     
     
+
 }
 
 extension ViewController: UITableViewDataSource {
@@ -56,3 +65,4 @@ struct ReMind {
     let identifier = String()
 }
    
+
