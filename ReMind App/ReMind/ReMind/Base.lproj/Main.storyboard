@@ -50,6 +50,61 @@
             </objects>
             <point key="canvasLocation" x="973.28244274809151" y="-2.1126760563380285"/>
         </scene>
+        <!--Add View Controller-->
+        <scene sceneID="KBL-bZ-0UE">
+            <objects>
+                <viewController storyboardIdentifier="add" id="gbT-DH-4pY" customClass="AddViewController" customModule="ReMind" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iCX-5b-y7G">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Title..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x2r-NX-pLU">
+                                <rect key="frame" x="10" y="69" width="373" height="52"/>
+                                <color key="backgroundColor" systemColor="secondarySystemFillColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="MDo-dF-tBo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Body..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SeD-4b-AAj">
+                                <rect key="frame" x="10" y="141" width="373" height="52"/>
+                                <color key="backgroundColor" systemColor="secondarySystemFillColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="LhF-0J-PdA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="v5Z-ys-QGp">
+                                <rect key="frame" x="10" y="203" width="373" height="605"/>
+                            </datePicker>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mZK-dR-1qP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mZK-dR-1qP" firstAttribute="trailing" secondItem="x2r-NX-pLU" secondAttribute="trailing" constant="10" id="0Nx-te-S7j"/>
+                            <constraint firstItem="mZK-dR-1qP" firstAttribute="trailing" secondItem="SeD-4b-AAj" secondAttribute="trailing" constant="10" id="GUn-kb-xnz"/>
+                            <constraint firstItem="SeD-4b-AAj" firstAttribute="leading" secondItem="mZK-dR-1qP" secondAttribute="leading" constant="10" id="IpO-od-ROf"/>
+                            <constraint firstItem="v5Z-ys-QGp" firstAttribute="top" secondItem="SeD-4b-AAj" secondAttribute="bottom" constant="10" id="MfB-vq-j60"/>
+                            <constraint firstItem="x2r-NX-pLU" firstAttribute="top" secondItem="mZK-dR-1qP" secondAttribute="top" constant="10" id="Tkz-ST-8Fx"/>
+                            <constraint firstAttribute="trailing" secondItem="v5Z-ys-QGp" secondAttribute="trailing" constant="10" id="WSE-b8-9W0"/>
+                            <constraint firstItem="mZK-dR-1qP" firstAttribute="bottom" secondItem="v5Z-ys-QGp" secondAttribute="bottom" constant="10" id="aZb-vA-rP0"/>
+                            <constraint firstItem="x2r-NX-pLU" firstAttribute="leading" secondItem="mZK-dR-1qP" secondAttribute="leading" constant="10" id="afg-oJ-UlD"/>
+                            <constraint firstItem="SeD-4b-AAj" firstAttribute="top" secondItem="x2r-NX-pLU" secondAttribute="bottom" constant="20" id="qIe-CZ-VTa"/>
+                            <constraint firstItem="v5Z-ys-QGp" firstAttribute="leading" secondItem="iCX-5b-y7G" secondAttribute="leading" constant="10" id="tmd-RS-zj2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bodyField" destination="SeD-4b-AAj" id="JPg-Qc-4em"/>
+                        <outlet property="datePicker" destination="v5Z-ys-QGp" id="flX-3O-XrB"/>
+                        <outlet property="titleField" destination="x2r-NX-pLU" id="DNN-lB-ml7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hbg-F9-Jzq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1820" y="-4"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="UvE-9w-4vz">
             <objects>
@@ -73,6 +128,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="secondarySystemFillColor">
+            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
