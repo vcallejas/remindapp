@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Dzz-ze-sCb">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="734"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="724"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -76,7 +76,7 @@
                                     <backgroundConfiguration key="background" cornerRadius="22"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="qKo-jx-7G3" kind="show" id="1I9-mA-XHZ"/>
+                                    <segue destination="qKo-jx-7G3" kind="show" id="ifm-ey-BiH"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Let us ReMind you" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q4w-Lv-5r8">
@@ -151,7 +151,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Already have an account? Log In"/>
                                 <connections>
-                                    <segue destination="qKo-jx-7G3" kind="show" id="e4K-IC-gAx"/>
+                                    <segue destination="qKo-jx-7G3" kind="show" id="6Ez-e6-V1L"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -269,7 +269,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Login"/>
                                 <connections>
-                                    <action selector="login:" destination="qKo-jx-7G3" eventType="touchUpInside" id="Joc-CX-S9i"/>
+                                    <action selector="LogIn:" destination="qKo-jx-7G3" eventType="touchUpInside" id="OpW-Wz-3Jq"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="yWm-G1-UxP"/>
                                 </connections>
                             </button>
@@ -299,7 +299,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Create an Account"/>
                                 <connections>
-                                    <action selector="CreateAccount:" destination="qKo-jx-7G3" eventType="touchUpInside" id="yLS-uu-lKp"/>
+                                    <action selector="CreateAnAccount:" destination="qKo-jx-7G3" eventType="touchUpInside" id="i7Y-1d-fie"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -321,7 +321,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="e4K-IC-gAx"/>
+        <segue reference="ifm-ey-BiH"/>
         <segue reference="yWm-G1-UxP"/>
     </inferredMetricsTieBreakers>
     <resources>
