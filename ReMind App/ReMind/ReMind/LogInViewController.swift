@@ -1,31 +1,37 @@
 //
-//  RegistrationViewController.swift
+//  LogInViewController.swift
 //  ReMind
 //
-//  Created by Marwan Alnounou on 11/30/22.
+//  Created by Victor Callejas on 12/1/22.
 //
 
 import UIKit
 
-class RegistrationViewController: UIViewController {
-
+class LogInViewController: UIViewController {
+    
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var emailTextField: UITextField!
+
     override func viewDidLoad() {
+       
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func signUpClicked(_ sender: UIButton) {
-        let vc = storyboard?.instantiateViewController(identifier: "Remind_") as! ViewController
+    @IBAction func LogIn(_ sender: Any) {
+            let vc = storyboard?.instantiateViewController(identifier: "Remind_") as! ViewController
+            present(vc, animated: true)
+    }
+ 
+        
+    @IBAction func CreateAnAccount(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(identifier: "create_acc") as! RegistrationViewController
         present(vc, animated: true)
     }
+}
     
-    @IBAction func noAccountClicked(_ sender: UIButton) {
-        
-    }
+
     /*
     // MARK: - Navigation
 
@@ -36,4 +42,3 @@ class RegistrationViewController: UIViewController {
     }
     */
 
-}

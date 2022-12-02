@@ -74,7 +74,7 @@ class ViewController: UIViewController {
         let content = UNMutableNotificationContent()
         content.title = "Hello World"
         content.sound = .default
-        content.body = "My long body. My long body.My long body. My long body. My long body."
+        content.body = "this is a test for notifications."
         
         let targetDate = Date().addingTimeInterval(10)
         let trigger = UNCalendarNotificationTrigger(dateMatching: Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second],
