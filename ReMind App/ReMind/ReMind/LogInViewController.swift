@@ -20,8 +20,11 @@ class LogInViewController: UIViewController {
     }
     
     @IBAction func LogIn(_ sender: Any) {
-            let vc = storyboard?.instantiateViewController(identifier: "Remind_") as! ViewController
-            present(vc, animated: true)
+        let vc = storyboard?.instantiateViewController(identifier: "Remind_") as! ViewController
+        present(vc, animated: true)
+        {
+        }
+            
     }
  
         
@@ -29,6 +32,7 @@ class LogInViewController: UIViewController {
         let vc = storyboard?.instantiateViewController(identifier: "create_acc") as! RegistrationViewController
         present(vc, animated: true)
     }
+    
 }
     
 
