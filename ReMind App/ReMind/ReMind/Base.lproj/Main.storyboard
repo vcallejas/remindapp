@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Dzz-ze-sCb">
-                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -144,7 +144,7 @@
                                     <backgroundConfiguration key="background" cornerRadius="22"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="gWR-ql-RDn"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="2eR-ZE-XUs"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4B-n8-Qci">
@@ -200,7 +200,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="v5Z-ys-QGp">
-                                <rect key="frame" x="10" y="247" width="373" height="512"/>
+                                <rect key="frame" x="10" y="247" width="373" height="561"/>
                             </datePicker>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HzA-Qh-qK1"/>
@@ -242,15 +242,6 @@
                                 <color key="textColor" systemColor="systemPurpleColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KkJ-KS-7fI">
-                                <rect key="frame" x="114" y="519" width="165" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="r9I-1M-YuV"/>
-                                </constraints>
-                                <color key="tintColor" systemColor="systemPurpleColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Login"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8dt-vp-5Rj">
                                 <rect key="frame" x="114" y="604" width="165" height="35"/>
                                 <constraints>
@@ -286,6 +277,19 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Create an Account"/>
                                 <connections>
                                     <action selector="CreateAnAccount:" destination="qKo-jx-7G3" eventType="touchUpInside" id="i7Y-1d-fie"/>
+                                    <segue destination="Wtd-7y-Ws6" kind="show" id="xEo-yX-rLA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KkJ-KS-7fI">
+                                <rect key="frame" x="114" y="518" width="165" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="r9I-1M-YuV"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemPurpleColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Login"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="ffJ-aQ-nqp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -345,7 +349,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="dDw-Hw-slY"/>
+        <segue reference="XBI-WS-6RD"/>
+        <segue reference="OeS-Hi-W94"/>
+        <segue reference="ffJ-aQ-nqp"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="brain" catalog="system" width="128" height="107"/>
